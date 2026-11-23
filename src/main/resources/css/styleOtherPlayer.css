@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Enchanted Land';
+    src: url('EnchantedLand.otf');
+}
+
+.label{
+    -fx-font-size: 35px;
+    -fx-font-family: 'Enchanted Land';
+}
+
+.button{
+    -fx-font-size:18px;
+}
+#bob{
+    -fx-max-width: 700px;
+    -fx-max-height: 400px;
+    -fx-padding: 10px;
+    -fx-background-image: url("../images/parchment.jpg");
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 15, 0, 0, 5);
+}

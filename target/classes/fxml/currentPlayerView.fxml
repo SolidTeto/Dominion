@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<fx:root fx:id="bob" stylesheets="@../css/stylePlayer.css" type="StackPane" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane>
+          <top>
+              <VBox alignment="CENTER" BorderPane.alignment="CENTER">
+                  <children>
+                      <Label fx:id="playerName" />
+                  </children>
+              </VBox>
+          </top>
+          <center>
+              <VBox BorderPane.alignment="CENTER">
+              <HBox fx:id="inPlayPane" alignment="CENTER" spacing="5.0">
+                  <padding>
+                     <Insets bottom="15.0" />
+                  </padding></HBox>
+                  <HBox fx:id="handPane" alignment="CENTER" spacing="5.0" />
+              </VBox>
+          </center>
+         <left>
+            <VBox BorderPane.alignment="CENTER">
+               <children>
+                   <Label fx:id="instruction">
+                       <VBox.margin>
+                           <Insets right="30.0" />
+                       </VBox.margin>
+                   </Label>
+                   <Label fx:id="action" alignment="TOP_LEFT" />
+                   <Label fx:id="buy" alignment="TOP_LEFT" />
+                   <Label fx:id="money" alignment="TOP_LEFT" />
+                   <Label fx:id="pirateShip" alignment="TOP_LEFT">
+                   <VBox.margin>
+                       <Insets right="30.0" />
+                   </VBox.margin>
+                   </Label>
+               </children>
+            </VBox>
+         </left>
+          <right>
+              <VBox>
+                  <Button fx:id="island" text="Island">
+                  <VBox.margin>
+                     <Insets left="30.0" />
+                  </VBox.margin></Button>
+                  <Button fx:id="village" text="Village">
+                  <VBox.margin>
+                     <Insets left="30.0" top="50.0" />
+                  </VBox.margin></Button>
+                  <Button fx:id="discard" text="Discard">
+                      <VBox.margin>
+                          <Insets left="30.0" top="50.0" />
+                      </VBox.margin></Button>
+                  <Label fx:id="trash" text="Trash" alignment="CENTER">
+                      <VBox.margin>
+                          <Insets left="30.0" top="50.0" />
+                      </VBox.margin></Label>
+              </VBox>
+          </right>
+          <bottom>
+              <HBox fx:id="yesOrNoButtons" alignment="CENTER" spacing="100" />
+          </bottom>
+      </BorderPane>
+   </children>
+</fx:root>

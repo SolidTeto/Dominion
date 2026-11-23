@@ -1,0 +1,23 @@
+.label{
+    -fx-font-size:18px;
+}
+
+.image-view{
+    -fx-cursor: hand;
+}
+
+.image-view:hover{
+    -fx-scale-x: 1.2;
+    -fx-scale-y: 1.2;
+    -fx-view-order: -1.0;
+}
+
+.button{
+    -fx-font-size:18px;
+}
+
+.root {
+    -fx-background-image: url("../images/bg.jpg");
+    -fx-background-size: cover;
+}
+
